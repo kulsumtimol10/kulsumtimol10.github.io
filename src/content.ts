@@ -55,7 +55,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'securevault', title: 'SecureVault', kind: 'Security', featured: true, accent: '#1b9a62', icon: 'lock',
+    id: 'securevault', title: 'SecureVault', kind: 'Group project · Security', featured: true, accent: '#1b9a62', icon: 'lock',
     blurb: 'A zero-knowledge password manager: the server never sees a plaintext credential.',
     bullets: [
       'AES-256-GCM encryption for stored credentials',
@@ -187,7 +187,7 @@ export const stops: Stop[] = [
     bullets: [job.needlist.bullets[0], job.needlist.bullets[1], job.needlist.bullets[2], job.needlist.bullets[4]],
     chips: ['React', 'TypeScript', 'Node', 'Firestore', 'Jest'],
   },
-  { ...projectStop('securevault', 'SecureVault'), kicker: 'Featured project · Security' },
+  { ...projectStop('securevault', 'SecureVault'), kicker: 'Featured group project · Security' },
   {
     id: 'lane', nav: 'Projects Lane',
     kicker: 'Just off Queens Quay',

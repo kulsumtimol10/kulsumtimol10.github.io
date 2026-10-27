@@ -25,3 +25,14 @@ npm run dev
 
 `npm run build` writes the static site to `dist/`. Add `?quality=low` to the URL to force the lighter
 rendering mode used on phones and slower GPUs.
+
+## Updating the resume
+
+The downloadable resume is generated from [`resume/resume.html`](resume/resume.html). Edit that file, then
+print it to `public/Kulsum-Timol-Resume.pdf` with headless Microsoft Edge or Chrome:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File resume/print.ps1
+```
+
+Keep it to one page, and keep plain text for skills and headings so applicant tracking systems can read it.

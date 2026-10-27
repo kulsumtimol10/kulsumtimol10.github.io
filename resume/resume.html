@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Source for public/Kulsum-Timol-Resume.pdf. Print it with resume/print.ps1 (headless Edge).
+     Uses installed static fonts (Segoe UI, Georgia): they embed as real text fonts, which applicant
+     tracking systems read reliably. Headings avoid letter-spacing for the same reason. -->
+<title>Kulsum Timol - Resume</title>
+<style>
+  @page { size: Letter; margin: 0.42in 0.55in 0.36in; }
+  :root { --ink: #14161c; --body: #2a2e38; --muted: #5a5f6c; --accent: #8a5a00; --rule: #ddd3bf; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font: 9.2pt/1.34 'Segoe UI', Arial, sans-serif; color: var(--body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: inherit; text-decoration: none; }
+  b { font-weight: 600; color: var(--ink); }
+
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 16pt; padding-bottom: 6pt; border-bottom: 1.5pt solid var(--ink); }
+  h1 { font: 700 24pt/1 Georgia, 'Times New Roman', serif; color: var(--ink); }
+  .role { margin-top: 4pt; font-size: 10pt; font-weight: 600; color: var(--accent); }
+  .contact { text-align: right; font-size: 8.6pt; line-height: 1.5; color: var(--muted); }
+  .contact a { color: var(--ink); }
+  .contact .sep { color: #b3ab9a; padding: 0 3pt; }
+
+  section { margin-top: 7pt; }
+  h2 { display: flex; align-items: center; gap: 8pt; margin-bottom: 3pt; font-size: 9.4pt; font-weight: 700; text-transform: uppercase; color: var(--accent); }
+  h2::after { content: ''; flex: 1; height: 0.8pt; background: var(--rule); }
+
+  .skills p + p { margin-top: 1pt; }
+
+  .item + .item { margin-top: 4pt; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  .head h3 { font-size: 9.5pt; font-weight: 600; color: var(--ink); }
+  .head h3 .org { font-weight: 400; color: var(--body); }
+  .head h3 .tech { font-weight: 400; color: var(--muted); }
+  .when { flex: none; font-size: 8.6pt; color: var(--muted); white-space: nowrap; }
+  .when a { color: var(--accent); font-weight: 600; }
+  ul { margin: 1pt 0 0 11pt; }
+  li { margin: 0.5pt 0; padding-left: 1pt; }
+  li::marker { color: var(--accent); }
+  .line { margin-top: 0.5pt; }
+  .more { list-style: none; margin: 0; }
+  .more li { margin: 1.5pt 0 0; padding-left: 11pt; text-indent: -11pt; }
+  .more b { font-weight: 600; }
+  .more .tech { color: var(--muted); }
+  .certs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5pt 16pt; list-style: none; margin: 0; }
+  .certs li { margin: 0; padding: 0; }
+  .certs li span { color: var(--muted); }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Kulsum Timol</h1>
+      <p class="role">Full-Stack Developer</p>
+    </div>
+    <div class="contact">
+      Toronto, ON<span class="sep">|</span><a href="mailto:aarzootimol@gmail.com">aarzootimol@gmail.com</a><span class="sep">|</span>English, Hindi, Gujarati<br>
+      <a href="https://www.linkedin.com/in/kulsumtimol">linkedin.com/in/kulsumtimol</a><span class="sep">|</span><a href="https://github.com/kulsumtimol10">github.com/kulsumtimol10</a><br>
+      Portfolio: <a href="https://kulsumtimol10.github.io">kulsumtimol10.github.io</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>Full-stack developer with production experience building responsive React and TypeScript front ends and secure REST APIs with Node.js, NestJS, Firebase and Google Cloud, most recently as a Software Developer Co-op at Needlist.org. Seneca Polytechnic Business IT graduate (GPA 3.8) with a systems, networking and security background; comfortable in Agile, Git and CI/CD workflows.</p>
+  </section>
+
+  <section>
+    <h2>Technical skills</h2>
+    <!-- One "Label: skills" line per row (not a two-column table), so text extraction keeps each label with its skills. -->
+    <div class="skills">
+      <p><b>Frontend:</b> TypeScript, JavaScript (ES6+), React, Redux (RTK Query), TanStack, HTML5, CSS3, Figma</p>
+      <p><b>Backend and data:</b> Node.js, NestJS (Fastify), Express, REST APIs, Firebase (Firestore, Auth), MySQL, Python (NumPy, pandas)</p>
+      <p><b>Cloud and DevOps:</b> Google Cloud (gcloud SDK), AWS and Azure fundamentals, Git / GitHub, CI/CD</p>
+      <p><b>Testing and process:</b> Jest, React Testing Library, Postman, code reviews, Agile / Scrum, technical documentation</p>
+      <p><b>Systems and networking:</b> Linux, shell scripting, Windows Server, Active Directory, VMware, TCP/IP, VLANs, NAT, ACLs, Cisco</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="head"><h3>Full-Stack Software Developer Co-op <span class="org">· Needlist.org, Remote, ON</span></h3><span class="when">Jan 2026 – Aug 2026</span></div>
+      <ul>
+        <li>Built and maintained full-stack features for a live web platform with TypeScript, React, Node.js and Express</li>
+        <li>Designed and integrated REST APIs and managed Firebase (Firestore and Authentication) for secure, role-based data access</li>
+        <li>Wrote unit and integration tests with Jest and validated APIs with Postman</li>
+        <li>Fixed front-end and back-end issues to improve performance and reliability; worked in Agile with Git and wrote technical docs</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="head"><h3>Full Stack Developer <span class="org">· Trueline Solution, Surat, India</span></h3><span class="when">Dec 2023 – Nov 2024</span></div>
+      <ul>
+        <li>Maintained and monitored enterprise web applications for availability, troubleshooting issues and resolving service tickets</li>
+        <li>Documented workflows, incidents and procedures, and supported user onboarding and access management</li>
+        <li>Worked with cross-functional teams to implement system enhancements</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="head"><h3>Teaching Assistant (Volunteer) <span class="org">· Islamic Center of Oshawa, Oshawa, ON</span></h3><span class="when">Jan 2025 – Aug 2025</span></div>
+      <p class="line">Supported students and staff with technical and academic issues, and coordinated communication across teams.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="item">
+      <div class="head"><h3>SecureVault <span class="tech">· group project · React, Node.js, Express, MySQL</span></h3><span class="when"><a href="https://github.com/kulsumtimol10/SecureVault">GitHub</a></span></div>
+      <ul>
+        <li>Zero-knowledge password manager: AES-256-GCM encrypted vault, hashed master passwords, lockout, 2FA and JWT sessions</li>
+        <li>Engineered the REST API for secure data management and designed a normalized MySQL schema (11 tables, 3NF)</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="head"><h3>Microservices storefront on AWS <span class="tech">· team of four · Docker, ECS Fargate, DynamoDB, Lambda, Terraform</span></h3><span class="when"><a href="https://github.com/kulsumtimol10/e-commerce-ECS-microservices">GitHub</a></span></div>
+      <ul>
+        <li>Contributed to an Amazon-style store built as order, product and user microservices, each with its own DynamoDB table</li>
+        <li>Event-driven sign-up (SQS, Lambda, SNS), React SPA with Cognito auth, Terraform deployed by keyless GitHub Actions</li>
+      </ul>
+    </div>
+    <ul class="more">
+      <li><b>Movie Recommendation System</b> <span class="tech">· Python, scikit-learn, Streamlit, TMDB API</span> · Machine-learning recommender; improved accuracy by 20% through feature engineering</li>
+      <li><b>Grocery Store Mobile App</b> <span class="tech">· Flutter, Firebase</span> · Cross-platform app with inventory, orders, user authentication and admin product management</li>
+      <li><b>E-Commerce Website</b> <span class="tech">· JSP, Servlets, MySQL</span> · Authentication, product management and analytics dashboards; optimized database queries for reporting</li>
+      <li><b>Image Editing Website</b> <span class="tech">· PHP, Python, MySQL</span> · Browser-based image editor with a Python processing back end</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <div class="head"><h3>Graduate Certificate, Business Information Technology <span class="org">· Seneca Polytechnic, Toronto, ON</span></h3><span class="when">Jan 2025 – Aug 2026</span></div>
+      <p class="line"><b>GPA 3.8 / 4.0</b> · Labs: Windows Server and Active Directory, Linux administration, secure networking (VLANs, NAT, OSPF, ACLs)</p>
+    </div>
+    <div class="item">
+      <div class="head"><h3>Bachelor of Science, Information Technology <span class="org">· SRKI, Sarvajanik University, Surat, India</span></h3><span class="when">Aug 2021 – May 2024</span></div>
+      <p class="line"><b>First Class with Distinction, CGPA 9.13</b></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul class="certs">
+      <li>Networking Basics <span>· Cisco, 2025</span></li>
+      <li>Fundamentals of Agile Project Management <span>· PMI, 2025</span></li>
+      <li>Introduction to Cybersecurity <span>· Cisco, 2025</span></li>
+      <li>Fundamentals of Predictive Project Management <span>· PMI, 2025</span></li>
+      <li>Cybersecurity Fundamentals <span>· IBM, 2025</span></li>
+      <li>AI Fundamentals <span>· Google, 2026</span></li>
+    </ul>
+  </section>
+</body>
+</html>
